@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../../core/app_colors.dart';
 import '../../../../core/app_strings.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class DoctorCardWidget extends StatelessWidget {
   final VoidCallback? onDetailsDoctorTap;
@@ -39,10 +41,10 @@ class DoctorCardWidget extends StatelessWidget {
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
                       'Ruby Melinda\nCharles',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         fontSize: 25,
                         fontWeight: FontWeight.w500,
                         height: 1.15,
@@ -50,8 +52,8 @@ class DoctorCardWidget extends StatelessWidget {
                         color: AppColors.textPrimary,
                       ),
                     ),
-                    SizedBox(height: 6),
-                    Text(
+                    const SizedBox(height: 6),
+                    const Text(
                       AppStrings.doctorSpeciality,
                       style: TextStyle(
                         color: AppColors.textSecondary,

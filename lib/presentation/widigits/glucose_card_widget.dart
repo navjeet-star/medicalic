@@ -42,7 +42,7 @@ class GlucoseCardWidget extends StatelessWidget {
                 AppStrings.glucoseLevelTitle,
                 style: TextStyle(
                   fontSize: 17,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w500,
                   color: AppColors.textPrimary,
                 ),
               ),
@@ -87,7 +87,7 @@ class GlucoseCardWidget extends StatelessWidget {
                           Text(
                             AppStrings.glucoseValue,
                             style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 40,
                               fontWeight: FontWeight.w500,
                               color: AppColors.textPrimary,
                               height: 1.0,

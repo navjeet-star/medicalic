@@ -49,7 +49,7 @@ class HeartRateCard extends StatelessWidget {
                 AppStrings.heartRateTitle,
                 style: TextStyle(
                   fontSize: 17,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w500,
                   color: AppColors.textPrimary,
                 ),
               ),
@@ -102,8 +102,8 @@ class HeartRateCard extends StatelessWidget {
                           Text(
                             AppStrings.heartRateValue,
                             style: TextStyle(
-                              fontSize: 34,
-                              fontWeight: FontWeight.w400,
+                              fontSize: 40,
+                              fontWeight: FontWeight.w500,
                               color: AppColors.textPrimary,
                               height: 1.0,
                             ),
