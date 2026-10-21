@@ -191,7 +191,6 @@ class _MessageScreenState extends State<MessageScreen> {
             ),
           ),
 
-          // Simple Chatbox
           Container(
             margin: const EdgeInsets.fromLTRB(16, 8, 16, 110),
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
