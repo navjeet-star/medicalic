@@ -82,8 +82,7 @@ class GlucoseCardWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
-                        crossAxisAlignment: CrossAxisAlignment.baseline,
-                        textBaseline: TextBaseline.alphabetic,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             AppStrings.glucoseValue,
@@ -96,13 +95,17 @@ class GlucoseCardWidget extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          Text(
-                            AppStrings.glucoseUnit,
-                            style: GoogleFonts.plusJakartaSans(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xFFA0A6B5),
-                              letterSpacing: -0.2,
+                          Padding(
+                            padding: const EdgeInsets.only(top: 3.0),
+                            child: Text(
+                              AppStrings.glucoseUnit,
+                              style: GoogleFonts.plusJakartaSans(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w400,
+                                color: const Color(0xFFA0A6B5),
+                                letterSpacing: -0.2,
+                                height: 1.0,
+                              ),
                             ),
                           ),
                         ],
