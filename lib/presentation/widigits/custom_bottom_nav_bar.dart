@@ -102,7 +102,6 @@ class _NavItem extends StatelessWidget {
           vertical: 4,
         ),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: [
             AnimatedContainer(
               duration: const Duration(milliseconds: 200),

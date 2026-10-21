@@ -4,14 +4,11 @@ import '../../../../core/app_strings.dart';
 
 class DoctorCardWidget extends StatelessWidget {
   final VoidCallback? onDetailsDoctorTap;
-  final VoidCallback? onScheduleTap;
-  final VoidCallback? onInfoTap;
+
 
   const DoctorCardWidget({
     super.key,
     this.onDetailsDoctorTap,
-    this.onScheduleTap,
-    this.onInfoTap,
   });
 
   @override
@@ -175,10 +172,8 @@ class DoctorCardWidget extends StatelessWidget {
 
           const SizedBox(height: 20),
 
-          // Action Buttons Row (Blue Details Doctor Pill, Black Calendar Circle, White Info Circle)
           Row(
             children: [
-              // Details Doctor Button (Expanded Blue Pill)
               Expanded(
                 child: Material(
                   color: Colors.transparent,
@@ -228,22 +223,18 @@ class DoctorCardWidget extends StatelessWidget {
               // Calendar Schedule Button (Black Circle)
               Material(
                 color: Colors.transparent,
-                child: InkWell(
-                  onTap: onScheduleTap,
-                  borderRadius: BorderRadius.circular(26),
-                  child: Container(
-                    width: 52,
-                    height: 52,
-                    decoration: const BoxDecoration(
-                      color: AppColors.darkButton,
-                      shape: BoxShape.circle,
-                    ),
-                    alignment: Alignment.center,
-                    child: const Icon(
-                      Icons.calendar_month_outlined,
-                      color: Colors.white,
-                      size: 20,
-                    ),
+                child: Container(
+                  width: 52,
+                  height: 52,
+                  decoration: const BoxDecoration(
+                    color: AppColors.darkButton,
+                    shape: BoxShape.circle,
+                  ),
+                  alignment: Alignment.center,
+                  child: const Icon(
+                    Icons.calendar_month_outlined,
+                    color: Colors.white,
+                    size: 20,
                   ),
                 ),
               ),
@@ -253,26 +244,22 @@ class DoctorCardWidget extends StatelessWidget {
               // Info Button (White Circle with Border)
               Material(
                 color: Colors.transparent,
-                child: InkWell(
-                  onTap: onInfoTap,
-                  borderRadius: BorderRadius.circular(26),
-                  child: Container(
-                    width: 52,
-                    height: 52,
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: const Color(0xFFE5E9F0),
-                        width: 1.2,
-                      ),
+                child: Container(
+                  width: 52,
+                  height: 52,
+                  decoration: BoxDecoration(
+                    color: AppColors.surface,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: const Color(0xFFE5E9F0),
+                      width: 1.2,
                     ),
-                    alignment: Alignment.center,
-                    child: const Icon(
-                      Icons.info_outline_rounded,
-                      color: AppColors.alertIconColor,
-                      size: 20,
-                    ),
+                  ),
+                  alignment: Alignment.center,
+                  child: const Icon(
+                    Icons.info_outline_rounded,
+                    color: AppColors.alertIconColor,
+                    size: 20,
                   ),
                 ),
               ),

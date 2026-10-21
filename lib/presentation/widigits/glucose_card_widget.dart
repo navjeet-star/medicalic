@@ -5,13 +5,9 @@ import '../screens/homeScreenTwo/widgets/striped_bar_chart_widget.dart';
 
 
 class GlucoseCardWidget extends StatelessWidget {
-  final VoidCallback? onViewDetailsTap;
-  final VoidCallback? onCardTap;
 
   const GlucoseCardWidget({
     super.key,
-    this.onViewDetailsTap,
-    this.onCardTap,
   });
 
   @override
@@ -52,18 +48,14 @@ class GlucoseCardWidget extends StatelessWidget {
               ),
               Material(
                 color: Colors.transparent,
-                child: InkWell(
-                  onTap: onViewDetailsTap,
-                  borderRadius: BorderRadius.circular(6),
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                    child: Text(
-                      AppStrings.viewDetails,
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.primary,
-                      ),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                  child: Text(
+                    AppStrings.viewDetails,
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.primary,
                     ),
                   ),
                 ),

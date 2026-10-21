@@ -19,8 +19,6 @@ class HomeScreen extends StatelessWidget {
           parent: AlwaysScrollableScrollPhysics(),
         ),
         children: [
-
-
           Container(
             padding: EdgeInsets.only(top: 20,left: 20,right: 20,bottom: 20),
             decoration: const BoxDecoration(
@@ -34,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
 
 
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
 
           Padding(
             padding:  EdgeInsets.symmetric(horizontal: 8.0),
@@ -44,7 +42,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
 
           Container(
             margin: EdgeInsets.symmetric(horizontal: 10),
@@ -56,35 +54,29 @@ class HomeScreen extends StatelessWidget {
               onDetailsDoctorTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const DoctorDetailsScreen(),
+                    builder: (context) =>  DoctorDetailsScreen(),
                   ),
                 );
               },
-              onScheduleTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const DoctorDetailsScreen(),
-                  ),
-                );
-              },
+
             ),
           ),
 
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
 
           GlucoseCardWidget(
 
           ),
 
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
 
           HeartRateCard(),
 
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
 
           GlucoseCardWidget(),
 
-          const SizedBox(height: 100),
+          SizedBox(height: 100),
         ],
       ),
     );

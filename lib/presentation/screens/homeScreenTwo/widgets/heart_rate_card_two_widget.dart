@@ -65,7 +65,6 @@ class HeartRateCardTwoWidget extends StatelessWidget {
                     ],
                   ),
                   child: const Row(
-                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(
                         Icons.all_inclusive_rounded,

@@ -72,28 +72,26 @@ class HomeHeaderWidget extends StatelessWidget {
           ],
         ),
 
-        GestureDetector(
-          child: Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: AppColors.surface,
-              border: Border.all(color: AppColors.border, width: 1.2),
-            ),
-            padding: const EdgeInsets.all(4),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Image.asset(
-                AppAssets.userAvatar,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) {
-                  return const Icon(
-                    Icons.person_rounded,
-                    color: AppColors.primary,
-                  );
-                },
-              ),
+        Container(
+          width: 50,
+          height: 50,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: AppColors.surface,
+            border: Border.all(color: AppColors.border, width: 1.2),
+          ),
+          padding: const EdgeInsets.all(4),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(50),
+            child: Image.asset(
+              AppAssets.userAvatar,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return const Icon(
+                  Icons.person_rounded,
+                  color: AppColors.primary,
+                );
+              },
             ),
           ),
         ),
