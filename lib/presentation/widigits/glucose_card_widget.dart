@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../core/app_colors.dart';
 import '../../core/app_strings.dart';
 import '../screens/homeScreenTwo/widgets/striped_bar_chart_widget.dart';
 
-
 class GlucoseCardWidget extends StatelessWidget {
+  final VoidCallback? onViewDetailsTap;
 
   const GlucoseCardWidget({
     super.key,
+    this.onViewDetailsTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16),
-      padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
+      padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
       decoration: BoxDecoration(
         color: AppColors.primaryContainer1,
         borderRadius: BorderRadius.circular(24),
@@ -38,24 +40,29 @@ class GlucoseCardWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 AppStrings.glucoseLevelTitle,
-                style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
+                style: GoogleFonts.plusJakartaSans(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
                   color: AppColors.textPrimary,
+                  letterSpacing: -0.3,
                 ),
               ),
               Material(
                 color: Colors.transparent,
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                  child: Text(
-                    AppStrings.viewDetails,
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.primary,
+                child: InkWell(
+                  onTap: onViewDetailsTap,
+                  borderRadius: BorderRadius.circular(6),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                    child: Text(
+                      AppStrings.viewDetails,
+                      style: GoogleFonts.plusJakartaSans(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.primary,
+                      ),
                     ),
                   ),
                 ),
@@ -68,38 +75,34 @@ class GlucoseCardWidget extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-
-
-
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 20.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-
-
-
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.baseline,
                         textBaseline: TextBaseline.alphabetic,
-                        children: const [
+                        children: [
                           Text(
                             AppStrings.glucoseValue,
-                            style: TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w500,
+                            style: GoogleFonts.plusJakartaSans(
+                              fontSize: 38,
+                              fontWeight: FontWeight.w600,
                               color: AppColors.textPrimary,
+                              letterSpacing: -0.8,
                               height: 1.0,
                             ),
                           ),
-                          SizedBox(width: 6),
+                          const SizedBox(width: 8),
                           Text(
                             AppStrings.glucoseUnit,
-                            style: TextStyle(
-                              fontSize: 14,
+                            style: GoogleFonts.plusJakartaSans(
+                              fontSize: 22,
                               fontWeight: FontWeight.w400,
-                              color: AppColors.textHint,
+                              color: const Color(0xFFA0A6B5),
+                              letterSpacing: -0.2,
                             ),
                           ),
                         ],
@@ -108,11 +111,11 @@ class GlucoseCardWidget extends StatelessWidget {
                       const SizedBox(height: 10),
 
                       // Subtitle
-                      const Text(
+                      Text(
                         AppStrings.glucoseSubtitle,
-                        style: TextStyle(
+                        style: GoogleFonts.plusJakartaSans(
                           fontSize: 12,
-                          color: AppColors.textSecondary,
+                          color: const Color(0xFF8C93A4),
                           height: 1.35,
                           fontWeight: FontWeight.w400,
                         ),

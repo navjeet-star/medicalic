@@ -1,12 +1,12 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:healthapp/presentation/screens/homeScreenTwo/widgets/striped_bar_chart_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/app_colors.dart';
 import '../../../../core/app_strings.dart';
 
-
 class GlucodeCardHomeTwo extends StatelessWidget {
-
+  const GlucodeCardHomeTwo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,11 @@ class GlucodeCardHomeTwo extends StatelessWidget {
             children: [
               Text(
                 AppStrings.glucoseLevelTitle,
-                style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w700,
+                style: GoogleFonts.plusJakartaSans(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
                   color: AppColors.textPrimary,
+                  letterSpacing: -0.3,
                 ),
               ),
               Material(
@@ -59,24 +60,25 @@ class GlucodeCardHomeTwo extends StatelessWidget {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.baseline,
                         textBaseline: TextBaseline.alphabetic,
-                        children: const [
+                        children: [
                           Text(
                             AppStrings.glucoseValue,
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: -0.5,
+                            style: GoogleFonts.plusJakartaSans(
+                              fontSize: 38,
+                              fontWeight: FontWeight.w600,
                               color: AppColors.textPrimary,
+                              letterSpacing: -0.8,
                               height: 1.0,
                             ),
                           ),
-                          SizedBox(width: 6),
+                          const SizedBox(width: 8),
                           Text(
                             AppStrings.glucoseUnit,
-                            style: TextStyle(
-                              fontSize: 15,
+                            style: GoogleFonts.plusJakartaSans(
+                              fontSize: 22,
                               fontWeight: FontWeight.w400,
-                              color: AppColors.textHint,
+                              color: const Color(0xFFA0A6B5),
+                              letterSpacing: -0.2,
                             ),
                           ),
                         ],
@@ -85,11 +87,11 @@ class GlucodeCardHomeTwo extends StatelessWidget {
                       const SizedBox(height: 10),
 
                       // Subtitle
-                      const Text(
+                      Text(
                         AppStrings.glucoseSubtitle,
-                        style: TextStyle(
+                        style: GoogleFonts.plusJakartaSans(
                           fontSize: 12,
-                          color: AppColors.textSecondary,
+                          color: const Color(0xFF8C93A4),
                           height: 1.35,
                           fontWeight: FontWeight.w400,
                         ),

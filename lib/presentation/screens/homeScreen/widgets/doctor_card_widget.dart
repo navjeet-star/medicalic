@@ -79,8 +79,8 @@ class DoctorCardWidget extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           const Icon(
-                            Icons.work_outline_rounded,
-                            size: 12,
+                            Icons.calendar_today_outlined,
+                            size: 16,
                             color: AppColors.textPrimary,
                           ),
                           const SizedBox(width: 4),
@@ -88,23 +88,23 @@ class DoctorCardWidget extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.end,
                             mainAxisAlignment: MainAxisAlignment.end,
                             textBaseline: TextBaseline.alphabetic,
-                            children: const [
+                            children: [
                               Text(
                                 AppStrings.experienceValue,
-                                style: TextStyle(
+                                style: GoogleFonts.plusJakartaSans(
                                   color: AppColors.textPrimary,
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.w600,
                                   fontSize: 35,
                                   height: 1.0,
                                 ),
                               ),
-                              SizedBox(width: 2),
-                              Text(
+                              const SizedBox(width: 2),
+                              const Text(
                                 AppStrings.experienceUnit,
                                 style: TextStyle(
                                   color: AppColors.textHint,
                                   fontWeight: FontWeight.w400,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                 ),
                               ),
                             ],
@@ -112,13 +112,13 @@ class DoctorCardWidget extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 3),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 2),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 2),
                         child: Text(
                           AppStrings.experienceLabel,
-                          style: TextStyle(
+                          style: GoogleFonts.plusJakartaSans(
                             fontSize: 11,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w600,
                             color: AppColors.textMuted,
                           ),
                         ),
@@ -128,25 +128,24 @@ class DoctorCardWidget extends StatelessWidget {
 
                   const SizedBox(width: 14),
 
-                  // Rating & Reviews Stat (Star + 4.7)
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        children: const [
-                          Icon(
+                        children: [
+                          const Icon(
                             Icons.star_border_rounded,
-                            size: 12,
+                            size: 18,
                             color: AppColors.textPrimary,
                           ),
-                          SizedBox(width: 3),
+                          const SizedBox(width: 3),
                           Text(
                             AppStrings.ratingValue,
-                            style: TextStyle(
+                            style: GoogleFonts.plusJakartaSans(
                               color: AppColors.textPrimary,
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w600,
                               fontSize: 35,
                               height: 1.0,
                             ),
@@ -154,13 +153,13 @@ class DoctorCardWidget extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 3),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 2),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 2),
                         child: Text(
                           '${AppStrings.reviewsCount} ${AppStrings.reviewsLabel}',
-                          style: TextStyle(
+                          style: GoogleFonts.plusJakartaSans(
                             fontSize: 11,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w600,
                             color: AppColors.textMuted,
                           ),
                         ),
