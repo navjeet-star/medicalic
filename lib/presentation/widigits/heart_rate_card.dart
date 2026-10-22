@@ -44,7 +44,7 @@ class HeartRateCard extends StatelessWidget {
               Text(
                 AppStrings.heartRateTitle,
                 style: GoogleFonts.plusJakartaSans(
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: FontWeight.w600,
                   color: AppColors.textPrimary,
                   letterSpacing: -0.3,
@@ -118,7 +118,7 @@ class HeartRateCard extends StatelessWidget {
                       Text(
                         AppStrings.heartRateSubtitle,
                         style: GoogleFonts.plusJakartaSans(
-                          fontSize: 12,
+                          fontSize: 13,
                           color: const Color(0xFF8C93A4),
                           height: 1.35,
                           fontWeight: FontWeight.w400,

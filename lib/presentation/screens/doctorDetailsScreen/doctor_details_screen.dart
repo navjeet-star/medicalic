@@ -204,8 +204,8 @@ class DoctorDetailsScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(24),
                   child: Container(
                     padding:  EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 9,
+                      horizontal: 18,
+                      vertical: 12,
                     ),
                     decoration: BoxDecoration(
                       color: AppColors.darkButton,
@@ -246,7 +246,7 @@ class DoctorDetailsScreen extends StatelessWidget {
               Container(
                 padding:  EdgeInsets.symmetric(
                   horizontal: 10,
-                  vertical: 9,
+                  vertical: 12,
                 ),
                 decoration: BoxDecoration(
                   color: Colors.white,
