@@ -6,5 +6,6 @@ class AppAssets {
   static const String userAvatar = '$imagesPath/user_avatar.png';
   static const String doctorAvatar = '$imagesPath/doctor_avatar.png';
   static const String doctorRuby = '$imagesPath/doctor_avatar.png';
+  static const String doctorRubyy = '$imagesPath/doctor_ruby.png';
 }
 

@@ -63,7 +63,7 @@ class GlucodeCardHomeTwo extends StatelessWidget {
                           Text(
                             AppStrings.glucoseValue,
                             style: GoogleFonts.plusJakartaSans(
-                              fontSize: 38,
+                              fontSize: 35,
                               fontWeight: FontWeight.w600,
                               color: AppColors.textPrimary,
                               letterSpacing: -0.8,
@@ -76,7 +76,7 @@ class GlucodeCardHomeTwo extends StatelessWidget {
                             child: Text(
                               AppStrings.glucoseUnit,
                               style: GoogleFonts.plusJakartaSans(
-                                fontSize: 22,
+                                fontSize: 20,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFFA0A6B5),
                                 letterSpacing: -0.2,

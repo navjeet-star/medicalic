@@ -23,16 +23,16 @@ class HeartRateCardTwoWidget extends StatelessWidget {
                 Text(
                   AppStrings.heartRateTitle,
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 20,
                     fontWeight: FontWeight.w700,
                     color: AppColors.textPrimary,
                   ),
                 ),
-                SizedBox(height: 3),
+                SizedBox(height: 2),
                 Text(
                   AppStrings.careForHealth,
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 13,
                     fontWeight: FontWeight.w400,
                     color: AppColors.textSecondary,
                   ),
@@ -50,8 +50,8 @@ class HeartRateCardTwoWidget extends StatelessWidget {
                 color: Colors.transparent,
                 child: Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 14,
-                    vertical: 9,
+                    horizontal: 18,
+                    vertical: 12,
                   ),
                   decoration: BoxDecoration(
                     color: AppColors.primary,
@@ -91,7 +91,7 @@ class HeartRateCardTwoWidget extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 10,
-                  vertical: 9,
+                  vertical: 12,
                 ),
                 decoration: BoxDecoration(
                   color: Colors.white,

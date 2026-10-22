@@ -13,14 +13,13 @@ class DoctorHeroWidget extends StatelessWidget {
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          // Right Side Doctor Portrait Image
           Positioned(
             right: -10,
             bottom: 0,
             top: 0,
             width: 200,
             child: Image.asset(
-              AppAssets.doctorRuby,
+              AppAssets.doctorRubyy,
               fit: BoxFit.contain,
               alignment: Alignment.bottomRight,
               errorBuilder: (context, error, stackTrace) {
